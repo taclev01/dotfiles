@@ -104,6 +104,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=/home/tclevenger/.cfg/ --work-tree=/home/tclevenger'
 
+
+##### PYENV ####
 # pyenv setup uncomment for inital installs
 # sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev liblzma-dev python3-openssl
 
@@ -112,3 +114,10 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init -)"
 
 eval "$(pyenv virtualenv-init -)"
+
+###  NVIM:
+#uncomment the following lines to install:
+# curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+# sudo rm -rf /opt/nvim
+# sudo tar -C /opt -xzf nvim-linux64.tar.gz
+export PATH="$PATH:/opt/nvim-linux64/bin"
